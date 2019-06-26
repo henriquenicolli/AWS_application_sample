@@ -2,6 +2,7 @@
 
 Henrique Nicolli
 Rafael Sampy
+Luiz Fernando
 
 
 Funcao lambda em java.
