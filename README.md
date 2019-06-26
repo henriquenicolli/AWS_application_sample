@@ -1,8 +1,8 @@
 # AWS_application_sample
 
-Henrique Nicolli
-Rafael Sampy
-Luiz Fernando
+Henrique Nicolli /
+Rafael Sampy /
+Luiz Fernando /
 
 
 Funcao lambda em java.
