@@ -1,6 +1,8 @@
 
 package com.henrique.nicolli.test;
 
+import java.util.Random;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,7 +36,8 @@ public class App implements RequestHandler<S3EventNotification, String> {
 		Table table = dynamoDB.getTable("file_data");
 		
 		Item item = new Item()
-			    .withJSON("Log", s3EventNotification.toJson()); 
+				.withPrimaryKey("id",new Random().nextInt())
+			    .withString("log", s3EventNotification.toJson().toString());
 		
 		PutItemOutcome outcome = table.putItem(item);
 		
